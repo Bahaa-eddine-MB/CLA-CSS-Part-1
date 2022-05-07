@@ -1,9 +1,355 @@
 :root {
-  --red: rgb(242 66 66);
-  --grey: rgb(237 237 237);
+    --red: rgb(242 66 66);
+    --grey: rgb(237 237 237);
 }
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+nav {
+    position: sticky;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.3rem;
+    top: 0px;
+}
+
+#links {
+    display: none;
+}
+
+.title-1 {
+    color: var(--red);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.title-2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.text {
+    text-align: center;
+    font-family: Amiko, Roboto Mono;
+    margin-bottom: 1.5rem;
+}
+
+.title-3 {
+    color: var(--red);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#mobile-menu {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#logo {
+    margin-right: 7.2rem;
+}
+
+.description {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+#get-started {
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: var(--red);
+    border: var(--red);
+    margin-bottom: 1rem;
+    border-width: 2px;
+    padding: 0.8rem 7rem;
+    color: white;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+#learn-more {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border-width: 2px;
+    padding: 0.8rem 7rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.b {
+    display: grid;
+    justify-items: center;
+    width: 99%;
+}
+
+#more-about-us {
+    border-radius: 0.5rem;
+    background-color: var(--red);
+    border: var(--red);
+    margin-bottom: 1rem;
+    border-width: 2px;
+    text-align: center;
+    padding: 0.8rem 7rem;
+    color: white;
+    font-size: 1rem;
+}
+
+#discover {
+    border-radius: 0.5rem;
+    background-color: var(--red);
+    border: var(--red);
+    margin-bottom: 1rem;
+    border-width: 2px;
+    text-align: center;
+    padding: 0.8rem 7rem;
+    color: white;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./assets/mobileBG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.main-content {
+    padding: 1rem;
+    background-color: var(--grey);
+}
+
+.main-content>div,
+.main-content>div>.service {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.form-input {
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    border: 2px solid black;
+    display: grid;
+    justify-items: stretch;
+    width: 18rem;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    color: inherit;
+}
+
+.form-input:not(textarea) {
+    height: 1rem;
+}
+
+form {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#submit {
+    width: 8rem;
+    justify-self: center;
+    border-radius: 0.5rem;
+    background-color: var(--red);
+    border: var(--red);
+    margin-bottom: 1rem;
+    border-width: 2px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+label>a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+#form-checkbox {
+    margin-left: 1.7rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-weight: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    #mobile-menu {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    #links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+    #learn {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        width: 10rem;
+        background-color: var(--red);
+        border: var(--red);
+        border-width: 2px;
+        color: white;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+    header {
+        padding: 2rem;
+        align-items: flex-start;
+        background-image: url(./assets/homeBG.png);
+    }
+    .description {
+        font-size: 3rem;
+        line-height: 1;
+        font-weight: bold;
+        text-align: left;
+    }
+    #get-started,
+    #learn-more {
+        padding: 1rem 4rem;
+        margin-right: 3rem;
+        display: inline;
+    }
+    .b {
+        width: 80%;
+    }
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-content>div {
+        margin-top: 3rem;
+    }
+    #services {
+        display: none;
+    }
+    .title-1 {
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+    }
+    .title-2 {
+        font-weight: 600;
+        margin-bottom: 0rem;
+        font-size: 3rem;
+    }
+    #more-about-us {
+        color: white;
+        font-size: 1rem;
+        padding: 1rem 4rem;
+        width: 15rem;
+        text-align: center;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+    #about>div {
+        text-align: left;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: 0.01fr 0.99fr;
+    }
+    #services-list>div>div {
+        text-align: left;
+    }
+    .title-3 {
+        color: black;
+        font-size: 1.5rem;
+        justify-self: left;
+    }
+    .c {
+        justify-self: left;
+    }
+    .text {
+        grid-column: span 2;
+    }
+    #services-list {
+        margin-right: 1rem;
+        margin-left: 10rem;
+    }
+    #discover {
+        margin-bottom: 5rem;
+        border-width: 2px;
+        text-align: center;
+        padding: 0.8rem 4rem;
+        color: white;
+        font-size: 1rem;
+        justify-self: left;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: left;
+    }
+    #name {
+        margin-left: 30%;
+        width: 67%;
+    }
+    #city {
+        justify-self: left;
+        width: 69.5%;
+    }
+    #email {
+        grid-column: span 2;
+        width: 70%;
+        margin-left: 15%;
+    }
+    #message {
+        grid-column: span 2;
+        width: 70%;
+        margin-left: 15%;
+    }
+    #form-checkbox {
+        grid-column: span 2;
+        margin-left: 15%;
+    }
+    #submit {
+        grid-column: span 2;
+    }
 }
