@@ -149,44 +149,44 @@ header {
     gap: 1rem;
 }
 
-.form-input {
-    border-radius: 0.5rem;
-    padding: 0.7rem;
-    border: 2px solid black;
-    display: grid;
-    justify-items: stretch;
-    width: 18rem;
-    font-family: inherit;
-    font-size: 100%;
-    line-height: inherit;
-    color: inherit;
-}
+    .form-input {
+        border-radius: 0.5rem;
+        padding: 0.7rem;
+        border: 2px solid black;
+        display: grid;
+        justify-items: stretch;
+        width: 18rem;
+        font-family: inherit;
+        font-size: 100%;
+        line-height: inherit;
+        color: inherit;
+    }
 
-.form-input:not(textarea) {
-    height: 1rem;
-}
+    .form-input:not(textarea) {
+        height: 1rem;
+    }
 
-form {
-    display: grid;
-    justify-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
+    form {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
 
-#submit {
-    width: 8rem;
-    justify-self: center;
-    border-radius: 0.5rem;
-    background-color: var(--red);
-    border: var(--red);
-    margin-bottom: 1rem;
-    border-width: 2px;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-}
+    #submit {
+        width: 8rem;
+        justify-self: center;
+        border-radius: 0.5rem;
+        background-color: var(--red);
+        border: var(--red);
+        margin-bottom: 1rem;
+        border-width: 2px;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+    }
 
 label>a {
     color: var(--red);
